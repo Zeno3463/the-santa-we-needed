@@ -1,0 +1,22 @@
+~ start
+
+Santa: Wow, Timmy has a really hard life.
+Santa: His father committed crime and is on the run, his mother being depressed, and him... all alone...
+Santa: I can't... I just have to give him the gift, even if that means I'm risking my own life...
+Santa: Alright, what should I give him?
+- Metal Christmas Tree
+- Metal Star
+- Metal Reindeer
+Santa: Alright, let's build!
+set GlobalVariables.start_building = true
+
+=> END
+
+~ acttwo
+
+Santa: Done.
+Santa: Sorry Timmy, I am out of resources... I only have some used metals and this anvil... Hope you don't mind.
+Santa: Whoo, whoo, ok, ok, let's go.
+set GlobalVariables.act_2_ended = true
+
+=> END!

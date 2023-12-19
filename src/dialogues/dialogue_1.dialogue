@@ -1,0 +1,105 @@
+~ start
+
+(Phone Notifications): You have a message from Santa.
+Timmy: Who's Santa? Better check on it.
+Santa: Ho Ho Ho! Merry Christmas Timmy!
+Timmy: Who are you?
+Santa: I'm Santa Clause!
+- Santa Clause is using a chatting app? This is probably a scam.
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter + 1
+	Timmy: You're a scammer.
+	Santa: No, I'm actually Santa! [wait=0.2] Look, I know a lot of things about you from watching you up high. [wait=0.2]You are currently 7 years old, you were born in New York but then moved out due to unknown reasons. [wait=0.2]Right now, you are lying on your bed, looking at your phone with the lights off, which is unhealthy to the eyes btw.
+	Timmy: You're still a little suspicious... but I'll believe you right now.
+	Santa: Thank god.
+- Oh my god! I'm talking to Santa Clause? That's the coolest thing ever! I can't believe it!
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter - 1
+	Timmy: Pleasure meeting you Santa!
+	Santa: Good boy Timmy!
+Santa: Anyways, I'm talking to you now because I wanted to give you a special gift.
+Santa: To see if you are actually eligible for the gift, I'll have to ask you a few questions.
+Timmy: Okay.
+
+Santa: Have you been naughty or nice this year?
+- Naughty
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter + 1
+	Timmy: Honestly, I've been naughty.
+	Timmy: I don't know why, but I just don't have the motivation to do nice things. I feel like my life is miserable.
+	Santa: Oh, poor Timmy.
+- Nice
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter - 1
+	Timmy: I've tried really hard to be nice this year. Even though I sometimes don't feel like it, I'll still try to do it.
+	Santa: That's wonderful to hear! Being kind and helpful is the true spirit of the season!
+Santa: Okay second question, can you tell me about a time when you did something kind for someone else without expecting anything in return?
+- Why should I help others?
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter + 1
+	Timmy: Why should I help others? It's not like they'll do anything for me.
+	Santa: What makes you think that?
+	Timmy: Everyone I knew, my family and friends, they always turn their backs on me, everytime. Life is terrible.
+	Santa: I understand. Being nice is hard. But sometimes, you just have to give it a try, and you might be surprised.
+- Yes
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter - 1
+	Timmy: I once helped an elderly neighbor carry groceries, and I didn't even ask for anything in return.
+	Santa: That's very nice of you. Why did you do that?
+	Timmy: I had a very complicated family life. I live in a family where there's literally no joy. I hope that I can at least spread a little bit of joy with others.
+	Santa: Ah, that warms my heart, young one.
+Santa: Next question. What is your favorite subject in school?
+- Art
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter - 1
+	Timmy: I love art because it lets me express my creativity. I think creating beautiful things can bring joy to people.
+	Santa: Art indeed has a magical way of spreading joy and beauty.
+- Science
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter - 1
+	Timmy: I love science because I love to study how things work. I hope that I'm able to contribute to the society by using my knowledge of science.
+	Santa: Science explores the wonders of nature. Curiousity and creativity is the essence of science. I'm so proud of you, little one!
+- None
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter + 1
+	Timmy: I hate school. None of it matters anyway.
+	Santa: Don't be like that. Education is a gift that keeps on giving. You might discover the joy in learning as you grow.
+Santa: Next question. Who do you value more? Your friends or your family?
+- Friends
+	Timmy: I love my friends. They bring me joy.
+	Santa: What about your family?
+	Timmy: Sometimes, my family just isn't there when I need them.
+	Santa: Why?
+	Timmy: My Dad is a wanted criminal, and ever since he ran away from us, my mother descended into depression. Everytime I wanted to tell her something, she'll always ignore me.
+	Santa: Oh, poor thing.
+- Family
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter + 1
+	Timmy: I love my family. Mainly because I don't have friends in school.
+	Santa: Why?
+	Timmy: It's probably because of my family history. You know, my father has a criminal record. And ever since he ran away from us, my mother descended into depression. But despite that, I still love my father, I still love my family.
+	Santa: That is really kind of you. I'm sure your father will be proud.
+- Neither
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter - 1
+	Timmy: Neither. Relationships are for the weaklings. Those that are strong are alone.
+	Santa: What makes you think like that?
+	Timmy: Relationships only results in misery. Just look at my father. He's a criminal! And he left us! Because of that, I am being bullied in school. Because of that, my mother suffers from depression! I'm better off alone.
+	Santa: Oh, my dear, strength doesn't come from being alone. True strength is found in the bonds we create with each other.
+	Timmy: Aren't you alone all the time?
+	Santa: ...no... not really. I have elfs and dears accompanying me! Ha!
+	Timmy: Ok... as if that's convincing at all.
+	Santa: Let's just move on, alright?
+Santa: Moving on, if you could create a magical creature, what would you create?
+- A copy of Santa
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter - 1
+	Timmy: I'd create a fluffy, flying creature that spreads joy to the world by dropping small gifts to children through their houses' chimneys.
+	Santa: Wait... isn't that my thing?
+	Timmy: Yea, I figure that you must be tired of traveling all around the world, giving gifts to so many children. I hope this little creature can help you spread love.
+	Santa: Aww, that's so heartwarming.
+- No creativity
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter + 1
+	Timmy: Creativity is useless. I'd rather do something practical and important.
+	Santa: Ah, but creativity has its own magic. It brings joy and innovation to the world. Practicality and imagination can coexist.
+Santa: Okay final question. If you can have any gifts, what do you want?
+- Father
+	Timmy: I want my father back.
+- Mother
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter - 1
+	Timmy: I want my mother cured from the depression she is suffering. I want her to be happy again.
+- Power
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter + 1
+	Timmy: I want to have more power in my life. That way, I don't have to suffer this much.
+Santa: ...Ok.
+(Phone Notifications): Santa is offline.
+set GlobalVariables.act_1_ended = true
+=> END
