@@ -1,0 +1,29 @@
+~ act_one
+
+Santa: Ouch, that hurts.
+Santa: So, this is Timmy's house eh
+set GlobalVariables.scene_3_act_1_ended = true
+
+=> END
+
+~ act_two
+
+Santa: Oh, hello there, my little Timmy!
+Timmy: Stop.
+Timmy: Dad.
+Santa: Wait... how do you know?
+Timmy: You think I'm still a child? I knew from the start when you're pretending to be Santa.
+Santa: Oh... Timmy, I just wanted to see you.
+Timmy: No! Don't lie! My life is miserable because of you! I got bullied because of you! My mom won't bother talking to me because of you! I HATE YOU!
+Santa: Oh poor Timmy, I'm sorry, I promise I'll make it up for you.
+Timmy: No, you'll only make things worse. I want you dead, you hear me? DEAD!
+Santa: Oh, my son, I...
+set GlobalVariables.scene_3_act_2_ended = true
+
+=> END
+
+~ act_three
+
+Timmy: Oh dad, you'll never be my Santa Clause
+
+=> END

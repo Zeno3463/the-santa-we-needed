@@ -1,0 +1,46 @@
+~ act_one
+
+Santa: Ouch, that hurts.
+Santa: So, this is Timmy's house eh
+set GlobalVariables.scene_3_act_1_ended = true
+
+=> END
+
+~ act_two
+
+Santa: Oh, hello there, my little Timmy!
+Timmy: Stop.
+Timmy: Dad.
+Santa: Wait... how do you know?
+Timmy: You think I'm still a child? I knew from the start when you're pretending to be Santa.
+Santa: Oh... Timmy, I just wanted to see you.
+Timmy: No! Don't lie! My life is miserable because of you! I got bullied because of you! My mom won't bother talking to me because of you! I HATE YOU!
+Santa: Oh poor Timmy, I'm sorry, I promise I'll make it up for you.
+Timmy: No, you'll only make things worse. I've called the police. I don't want to see you in my life ever again.
+Santa: No Timmy... 
+set GlobalVariables.scene_3_act_2_ended = true
+
+=> END
+
+~ act_three
+
+Police: Police! Hands on your head!
+Santa: STOP! If you move one step further, I'LL KILL HIM!
+Timmy: Dad... what are you doing dad?
+Police: Stay alert, he's got a hostage.
+Santa: I SAY STEP BACK!
+Police: Target is emotionally unstable, hostage is in danger, permission to engage.
+Timmy: Dad... No, please...
+Santa: SHUT UP TIMMY!
+set GlobalVariables.scene_3_act_3_ended = true
+
+=> END
+
+~ act_four
+
+Timmy: No! Dad! NOOO!
+Police: Hostage is secured.
+Timmy: Dad, I'm sorry dad, I shouldn't have shouted at you. I shouldn't have been mean to you.
+Timmy: Wherever you are, dad, you'll always be my Santa Clause.
+
+=> END

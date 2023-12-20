@@ -64,13 +64,13 @@ Santa: Next question. Who do you value more? Your friends or your family?
 	Timmy: My Dad is a wanted criminal, and ever since he ran away from us, my mother descended into depression. Everytime I wanted to tell her something, she'll always ignore me.
 	Santa: Oh, poor thing.
 - Family
-	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter + 1
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter - 1
 	Timmy: I love my family. Mainly because I don't have friends in school.
 	Santa: Why?
 	Timmy: It's probably because of my family history. You know, my father has a criminal record. And ever since he ran away from us, my mother descended into depression. But despite that, I still love my father, I still love my family.
 	Santa: That is really kind of you. I'm sure your father will be proud.
 - Neither
-	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter - 1
+	set GlobalVariables.naugthy_meter = GlobalVariables.naugthy_meter + 1
 	Timmy: Neither. Relationships are for the weaklings. Those that are strong are alone.
 	Santa: What makes you think like that?
 	Timmy: Relationships only results in misery. Just look at my father. He's a criminal! And he left us! Because of that, I am being bullied in school. Because of that, my mother suffers from depression! I'm better off alone.

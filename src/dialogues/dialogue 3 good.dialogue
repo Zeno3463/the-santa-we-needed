@@ -1,0 +1,60 @@
+~ act_one
+
+Santa: Ouch, that hurts.
+Santa: So, this is Timmy's house eh
+set GlobalVariables.scene_3_act_1_ended = true
+
+=> END
+
+~ act_two
+
+Santa: Oh, hello there, my little Timmy!
+Timmy: Omg, Santa Clause! It really is you!
+Santa: Hi Timmy! Merry Christmas!
+Timmy: Thanks Santa! Omg I'm so excited. I can't believe it's you!
+Santa: Honestly, me neither. I'm so excited to see you as well, little one.
+Santa: Oh, right! Here's the special gift.
+set GlobalVariables.scene_3_act_2_ended = true
+
+=> END
+
+~ act_three
+
+Timmy: Um... a metallic model? This is the special gift?
+Santa: Uhhhhhh, yea. See, uh... it's special... because... I made it all by myself! I made this gift with my bare hands, without using any magic!
+Timmy: Oh wow! In that case, I LOVE IT! In fact, I think meeting you in person is my greatest gift!
+Santa: Oh my Timmy, what a pure heart you have.
+Santa: Alright, I got to go give more gifts now, see you.
+Timmy: Alright, I'm going to bed as well, thanks Santa!
+Santa: Bye bye.
+Timmy: Bye bye!
+set GlobalVariables.scene_3_act_3_ended = true
+
+=> END
+
+~ act_four
+
+Jean: John?
+Santa: Hi... Merry Christmas, Jean.
+Jean: ... I'm calling the police.
+Santa: Wait no! I wanted to apologise.
+Jean: NO! WHAT DO YOU WANT TO APOLOGISE FOR? HUH! For not being a father you're supposed to be?! For leaving us all these years?! For letting me handle the burden all alone?! HUH?!
+Santa: I know, I know, I'm sorry, I've been irresponsible, I've been bad. I know that now, but I wanted to do something for this family. See, I dressed up as Santa Clause today to surprise our little Timmy.
+Jean: GET OUT! You're worth nothing in this family! GET! OUT!
+set GlobalVariables.scene_3_act_4_ended = true
+
+=> END
+
+~ act_five
+
+Timmy: What's going on... Dad?
+Santa: Oh, Timmy my boy... I love you.
+Timmy: ... I love you too Dad.
+Santa: I'm sorry Timmy, I truly am.
+Jean: If you are truly sorry, you should surrender yourself to the police, not coming here pretending like Santa!
+Santa: But I... I...
+Timmy: Don't worry Dad, no matter where you are, no matter what you've done, you'll still be my Santa Clause.
+Santa: Oh my little Timmy. Ok, ok, alright, I'll surrender myself, it's done.
+Jean: GO! GET OUT NOW!
+
+=> END

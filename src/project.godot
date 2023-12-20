@@ -30,7 +30,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogues/dialogue_1.dialogue", "res://dialogues/dialogue_2.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogues/dialogue_1.dialogue", "res://dialogues/dialogue_2.dialogue", "res://dialogues/dialogue 3 evil.dialogue", "res://dialogues/dialogue 3 death.dialogue", "res://dialogues/dialogue 3 good.dialogue")
 
 [rendering]
 

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://yreok7qv5xti"
+path="res://.godot/imported/dialogue 3 good.dialogue-3e1b64d5330b5ac92ab105eecd223c74.tres"
+
+[deps]
+
+source_file="res://dialogues/dialogue 3 good.dialogue"
+dest_files=["res://.godot/imported/dialogue 3 good.dialogue-3e1b64d5330b5ac92ab105eecd223c74.tres"]
+
+[params]
+
+defaults=true

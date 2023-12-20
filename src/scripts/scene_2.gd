@@ -14,4 +14,4 @@ func _process(delta):
 		DialogueManager.show_example_dialogue_balloon(load("res://dialogues/dialogue_2.dialogue"), "acttwo")
 		GlobalVariables.start_building = false
 	if GlobalVariables.act_2_ended:
-		get_tree().change_scene_to_file("res://scenes/scene_1.tscn")
+		get_tree().change_scene_to_file("res://scenes/scene_3.tscn")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://xp86abd6x1y4"
+path="res://.godot/imported/dialogue 3 evil.dialogue-7f5aabe8a796e8a9d4161e32571048ab.tres"
+
+[deps]
+
+source_file="res://dialogues/dialogue 3 evil.dialogue"
+dest_files=["res://.godot/imported/dialogue 3 evil.dialogue-7f5aabe8a796e8a9d4161e32571048ab.tres"]
+
+[params]
+
+defaults=true
