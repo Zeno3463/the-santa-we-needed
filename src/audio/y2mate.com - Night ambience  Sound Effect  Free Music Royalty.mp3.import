@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://pppbxh10knnv"
+path="res://.godot/imported/y2mate.com - Night ambience  Sound Effect  Free Music Royalty.mp3-abfe4f4f4727cb7c4073e3fa4631c10b.mp3str"
+
+[deps]
+
+source_file="res://audio/y2mate.com - Night ambience  Sound Effect  Free Music Royalty.mp3"
+dest_files=["res://.godot/imported/y2mate.com - Night ambience  Sound Effect  Free Music Royalty.mp3-abfe4f4f4727cb7c4073e3fa4631c10b.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

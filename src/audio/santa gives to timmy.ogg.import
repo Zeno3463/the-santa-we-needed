@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dgy54rkhh2ql"
+path="res://.godot/imported/santa gives to timmy.ogg-235fc20aabea9e568aee292fe5a309ae.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/santa gives to timmy.ogg"
+dest_files=["res://.godot/imported/santa gives to timmy.ogg-235fc20aabea9e568aee292fe5a309ae.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

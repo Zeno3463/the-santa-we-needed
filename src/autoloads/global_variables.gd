@@ -1,6 +1,7 @@
 extends Node
 
 var naugthy_meter: int = 0
+var story_ended: bool = false
 
 # Scene 1
 var act_1_ended: bool = false

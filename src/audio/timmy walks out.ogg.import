@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bj4slu6oxlw4d"
+path="res://.godot/imported/timmy walks out.ogg-13313c8df30c0a7fb329856a51cb1a61.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/timmy walks out.ogg"
+dest_files=["res://.godot/imported/timmy walks out.ogg-13313c8df30c0a7fb329856a51cb1a61.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

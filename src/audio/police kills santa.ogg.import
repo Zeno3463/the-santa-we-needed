@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://sa3mf5vpa661"
+path="res://.godot/imported/police kills santa.ogg-24ddc7d4f5eec66b09800b8e66c606ef.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/police kills santa.ogg"
+dest_files=["res://.godot/imported/police kills santa.ogg-24ddc7d4f5eec66b09800b8e66c606ef.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

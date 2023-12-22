@@ -25,5 +25,6 @@ set GlobalVariables.scene_3_act_2_ended = true
 ~ act_three
 
 Timmy: Oh dad, you'll never be my Santa Clause
+set GlobalVariables.story_ended = true
 
 => END

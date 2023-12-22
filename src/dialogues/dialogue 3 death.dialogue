@@ -42,5 +42,6 @@ Timmy: No! Dad! NOOO!
 Police: Hostage is secured.
 Timmy: Dad, I'm sorry dad, I shouldn't have shouted at you. I shouldn't have been mean to you.
 Timmy: Wherever you are, dad, you'll always be my Santa Clause.
+set GlobalVariables.story_ended = true
 
 => END

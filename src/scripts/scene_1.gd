@@ -1,10 +1,15 @@
 extends CanvasLayer
 
+func _ready():
+	$AnimationPlayer.play("fade")
+
 func _on_animated_sprite_2d_animation_finished():
 	if $AnimatedSprite2D.animation == "act_1":
 		DialogueManager.show_example_dialogue_balloon(load("res://dialogues/dialogue_1.dialogue"), "start")
 		$AnimatedSprite2D.play("act_2")
 	elif $AnimatedSprite2D.animation == "act_3":
+		$AnimationPlayer.play_backwards("fade")
+		await $AnimationPlayer.animation_finished
 		get_tree().change_scene_to_file("res://scenes/scene_2.tscn")
 		
 func _process(delta):

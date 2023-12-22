@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=3 uid="uid://bnenh0v8tqow5"]
+[gd_scene load_steps=100 format=3 uid="uid://bnenh0v8tqow5"]
 
 [ext_resource type="Script" path="res://scripts/scene_3.gd" id="1_6i8ar"]
 [ext_resource type="Texture2D" uid="uid://dg2urud305bg5" path="res://sprites/scene 3/scene 3.png" id="1_cls3a"]
@@ -12,6 +12,16 @@
 [ext_resource type="Texture2D" uid="uid://ce8nc3ifv7xuk" path="res://sprites/scene 3/scene 3 act 4 death ending.png" id="7_xknwd"]
 [ext_resource type="Texture2D" uid="uid://bwt7da8lsghj4" path="res://sprites/scene 3/scene 3 act 4 good ending.png" id="9_hg261"]
 [ext_resource type="Texture2D" uid="uid://nqvpeaiylh6v" path="res://sprites/scene 3/scene 3 act 5 good ending.png" id="10_4fqcc"]
+[ext_resource type="AudioStream" uid="uid://6pbw81a5nyse" path="res://audio/Room Tone Hum - SFX Producer.wav" id="13_qo440"]
+[ext_resource type="Script" path="res://scripts/SFX Manager.gd" id="14_fu4j4"]
+[ext_resource type="AudioStream" uid="uid://dll5uquc5x4td" path="res://audio/mixkit-falling-on-foil-748.ogg" id="15_lfpdj"]
+[ext_resource type="AudioStream" uid="uid://bme5ppelrhv" path="res://audio/mixkit-footsteps-on-mattress-loop-534.ogg" id="16_atug2"]
+[ext_resource type="AudioStream" uid="uid://d783hjmq4n6s" path="res://audio/timmy walk in.ogg" id="17_iphgu"]
+[ext_resource type="AudioStream" uid="uid://b76xd8fpjh3e1" path="res://audio/mixkit-bone-breaking-with-echo-2937.ogg" id="18_7hff3"]
+[ext_resource type="AudioStream" uid="uid://sa3mf5vpa661" path="res://audio/police kills santa.ogg" id="19_s2qjg"]
+[ext_resource type="AudioStream" uid="uid://cdnj230pfaa0m" path="res://audio/timmy kills santa.ogg" id="20_oeg2t"]
+[ext_resource type="AudioStream" uid="uid://dgy54rkhh2ql" path="res://audio/santa gives to timmy.ogg" id="21_61edl"]
+[ext_resource type="AudioStream" uid="uid://bj4slu6oxlw4d" path="res://audio/timmy walks out.ogg" id="22_awq6q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s3e7f"]
 atlas = ExtResource("1_cls3a")
@@ -587,6 +597,42 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_8xbpl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_eylkc"]
+resource_name = "fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7xyva"]
+_data = {
+"RESET": SubResource("Animation_8xbpl"),
+"fade": SubResource("Animation_eylkc")
+}
+
 [node name="scene 3" type="CanvasLayer"]
 script = ExtResource("1_6i8ar")
 
@@ -595,15 +641,40 @@ texture_filter = 1
 position = Vector2(577, 320)
 scale = Vector2(12.15, 12.15)
 sprite_frames = SubResource("SpriteFrames_517st")
-animation = &"act 5 good"
+animation = &"act 4 good"
 autoplay = "act 1"
-frame = 4
-frame_progress = 1.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0, 0, 0, 0.34902)
 position = Vector2(597, 274)
 scale = Vector2(124.534, 77.0342)
 texture = ExtResource("2_ci5aq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -117.0
+offset_top = -197.0
+offset_right = 1284.0
+offset_bottom = 704.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7xyva")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_qo440")
+autoplay = true
+
+[node name="SFX Manager" type="AudioStreamPlayer" parent="."]
+script = ExtResource("14_fu4j4")
+fall_sfx = ExtResource("15_lfpdj")
+stand_up_sfx = ExtResource("16_atug2")
+timmy_walk_in_sfx = ExtResource("17_iphgu")
+police_break_in_sfx = ExtResource("18_7hff3")
+police_kills_santa_sfx = ExtResource("19_s2qjg")
+timmy_kills_santa_sfx = ExtResource("20_oeg2t")
+santa_gives_sfx = ExtResource("21_61edl")
+timmy_walks_out_sfx = ExtResource("22_awq6q")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

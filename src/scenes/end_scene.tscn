@@ -1,0 +1,244 @@
+[gd_scene load_steps=7 format=3 uid="uid://cedv87dm1npj6"]
+
+[ext_resource type="Script" path="res://scripts/end_scene.gd" id="1_5nn6k"]
+[ext_resource type="FontFile" uid="uid://cym4xrljep6u2" path="res://fonts/RobotoCondensed-VariableFont_wght.ttf" id="1_u87k8"]
+[ext_resource type="AudioStream" uid="uid://6pbw81a5nyse" path="res://audio/Room Tone Hum - SFX Producer.wav" id="3_ej6nb"]
+
+[sub_resource type="Animation" id="Animation_lku60"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_nje50"]
+resource_name = "new_animation"
+length = 11.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 3, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(4, 4.6, 5.4, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(6, 6.6, 7.4, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(8, 9.1, 10.1, 11),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rplek"]
+_data = {
+"RESET": SubResource("Animation_lku60"),
+"new_animation": SubResource("Animation_nje50")
+}
+
+[node name="end scene" type="CanvasLayer"]
+script = ExtResource("1_5nn6k")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -43.0
+offset_top = -25.0
+offset_right = 1182.0
+offset_bottom = 671.0
+color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = -34.0
+offset_right = 47.0
+offset_bottom = 6.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 296.0
+offset_right = 798.0
+offset_bottom = 366.0
+theme_override_fonts/normal_font = ExtResource("1_u87k8")
+theme_override_font_sizes/normal_font_size = 50
+text = "The Santa We Needed"
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 373.0
+offset_right = 1042.0
+offset_bottom = 436.0
+theme_override_fonts/font = ExtResource("1_u87k8")
+theme_override_font_sizes/font_size = 25
+text = "You Got The Death Ending (2/3)"
+
+[node name="Control2" type="Control" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = -34.0
+offset_right = 47.0
+offset_bottom = 6.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control2"]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 50.0
+offset_right = 1143.0
+offset_bottom = 702.0
+theme_override_fonts/normal_font = ExtResource("1_u87k8")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "
+[center]Made By[/center]
+[center]Zeno
+
+Pixel Art By
+Zeno
+
+Story By
+Zeno"
+
+[node name="Control3" type="Control" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = -34.0
+offset_right = 47.0
+offset_bottom = 6.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control3"]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 50.0
+offset_right = 1143.0
+offset_bottom = 702.0
+theme_override_fonts/normal_font = ExtResource("1_u87k8")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "[center]
+SFX
+MixKit
+
+Room Ambience
+Ambience - Room Tone Hum - SFX Producer
+
+Night Ambience
+Night [Mixtape Release]
+"
+
+[node name="Control4" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 6.0
+offset_top = 65.0
+offset_right = 46.0
+offset_bottom = 105.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control4"]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 50.0
+offset_right = 1143.0
+offset_bottom = 702.0
+theme_override_fonts/normal_font = ExtResource("1_u87k8")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "[center]
+Made For
+James Game Christmas Edition 2023
+
+Thank You For Playing!
+Merry Christmas!"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "new_animation"
+libraries = {
+"": SubResource("AnimationLibrary_rplek")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ej6nb")
+autoplay = true

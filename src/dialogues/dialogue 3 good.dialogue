@@ -56,5 +56,6 @@ Santa: But I... I...
 Timmy: Don't worry Dad, no matter where you are, no matter what you've done, you'll still be my Santa Clause.
 Santa: Oh my little Timmy. Ok, ok, alright, I'll surrender myself, it's done.
 Jean: GO! GET OUT NOW!
+set GlobalVariables.story_ended = true
 
 => END
